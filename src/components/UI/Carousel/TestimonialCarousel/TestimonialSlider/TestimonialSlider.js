@@ -13,7 +13,7 @@ const Slider = props => {
                 <div className={classes.Image}>
                     <props.Image/>
                 </div>
-                <p>{props.content}</p>
+                <p>"{props.content}"</p>
             </div>
         </div>
     )
