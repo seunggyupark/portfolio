@@ -1,0 +1,51 @@
+.Experiences {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(8, 12.5%);
+    height: 100vh;
+}
+
+.CarouselContainer {
+    grid-area: 3 / 2 / 8 / 8;
+}
+
+.Header {
+    grid-area: 2 / 3 / 3 / 7;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.Experiences h1 {
+    color: #cacaca;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0;
+    display: block;
+}
+
+.Experiences h2 {
+    font-size: 20px;
+    line-height: 165%;
+    font-weight: 400;
+}
+
+
+@media (max-width: 801px) {
+    .Header {
+        grid-area: 1 / 3 / 2 / 7;
+    }
+
+    .CarouselContainer {
+        grid-area: 2 / 2 / 8 / 8;
+    }
+}
+
+
+@media (max-width: 769px) {
+    .CarouselContainer {
+        grid-area: 2 / 1 / 8 / 9;
+    }
+    .Subheader {
+        display: none;
+    }
+}

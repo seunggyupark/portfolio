@@ -1,0 +1,42 @@
+.Social {
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /*box-shadow: 1px 1.5px 2px #7f7f7f;*/
+}
+
+
+.Social a {
+    color:  #7f7f7f;
+    padding: 10px 20px 5px 20px;
+    font-size: 24px;
+}
+
+.linkedin,
+.twitter,
+.github {
+    transition: color 0.2s;
+}
+
+.linkedin:hover,
+.linkedin:active {
+    color: #0077b5;
+}
+
+.twitter:hover,
+.twitter:active {
+    color: #00aced;
+}
+
+.github:hover,
+.github:active {
+    color: #c9510c;
+}
+
+@media (max-width: 600px) {
+    .Social a {
+        font-size: 20px;
+    }
+}
