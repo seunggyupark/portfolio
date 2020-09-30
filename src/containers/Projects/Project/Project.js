@@ -30,9 +30,11 @@ const Project = props => {
                         {props.description}
                     </div>
                     <ul>
-                        <li style={props.linkStyle}><a href={props.link} target="_blank" rel="noopener noreferrer">
+                        <li style={props.linkStyle}><a href={props.link} target="_blank" rel="noopener noreferrer" className={classes.Demo}>
                             <ion-icon name="link-outline" /></a></li>
-                        <li className={classes.HelpIcon} onClick={toggleModal}><ion-icon name="information-circle-outline" /></li>
+                        <li style={props.showCode} className={classes.GithubContainer}><a href={props.codeLink} target="_blank" rel="noopener noreferrer" className={classes.Github}>
+                            <ion-icon name="logo-github" /></a></li>
+                        <li onClick={toggleModal}><ion-icon name="information-circle-outline" /></li>
                     </ul>
                 </div>
             </div>
