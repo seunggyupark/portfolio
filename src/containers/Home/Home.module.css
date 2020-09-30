@@ -1,0 +1,79 @@
+
+.Background {
+    background: url(../../assets/img/Background.png) #2a2a2a;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    grid-template: 55% 45% / 1;
+}
+
+.Home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0px 6px;
+    grid-area: 1;
+}
+
+.Home h1 {
+    color: #cacaca;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+    
+}
+
+.Home h2 {
+    font-size: 20px;
+    line-height: 165%;
+    font-weight: 400;
+}
+
+.Name {
+    color: #96fae8;
+}
+
+.Social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2;
+}
+
+.Job1 {
+    color: #9f9f9f;
+    animation: highlighter ease-in-out 3s 2s;
+}
+
+.Job2 {
+    color: #9f9f9f;
+    animation: highlighter ease-in-out 3s 3s;
+}
+
+.Job3 {
+    color: #9f9f9f;
+    animation: highlighter ease-in-out 3s 4s;
+}
+
+@keyframes highlighter {
+    0% { color: #9f9f9f }
+    50% { color: #96fae8 }
+    100% { color: #9f9f9f }
+}
+
+
+@media (max-width: 600px) {
+    .Home h1 {
+        font-size: 22px;
+        
+    }
+    .Home h2 {
+        font-size: 16px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
