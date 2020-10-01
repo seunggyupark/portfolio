@@ -15,7 +15,7 @@
 .ImageContainer {
     position: relative;
     width: 800px;
-    height: auto;
+    height: 100%;
 }
 
 .Gif,
@@ -25,10 +25,10 @@
 
 /* Start of Still Container */
 
-.StillContainer:hover,
-.StillContainer.Hidden {
+.StillContainer:hover {
     opacity: 0;
 }
+
 
 .StillContainer {
     position: absolute;
@@ -168,6 +168,12 @@
         margin-top: 15px;
     }
 
+}
+
+@media (max-width: 768px) {
+    .StillContainer {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 651px) {
