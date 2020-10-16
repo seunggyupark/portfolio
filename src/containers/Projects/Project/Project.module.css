@@ -23,6 +23,11 @@
     height: 450px;
 }
 
+.Gif {
+    z-index: -1;
+}
+
+
 /* Start of Still Container */
 
 .StillContainer:hover {
