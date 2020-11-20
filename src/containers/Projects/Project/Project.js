@@ -1,11 +1,12 @@
 import classes from './Project.module.css';
 import Modal from '../../../components/UI/Modal/Modal';
 import React, { useState } from 'react';
-import GifPlayer  from 'react-gif-player';
 
 const Project = props => {
 
     const [showModal, setShowModal] = useState(false);
+
+    const stillStyles = [classes.Still, props.hideStill ? classes.Hidden : null];
 
     const toggleModal = () => setShowModal(!showModal);
 
@@ -16,7 +17,8 @@ const Project = props => {
             <h2 className={classes.Title}>{props.title}</h2>
             <div className={classes.ProjectContainer} style={props.borderStyle}>
                 <div className={classes.ImageContainer}>
-                    <GifPlayer gif={props.gif} still={props.still} className={classes.Gif} autoplay={props.key === 0} />
+                    <img src={props.still} alt="Still" className={stillStyles.join(' ')} />
+                    <img src={props.gif} alt="Gif" className={classes.Gif} />
                 </div>
                 <div className={classes.Description}>
                     <div className={classes.TextDescription}>

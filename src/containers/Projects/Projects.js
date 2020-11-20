@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import classes from './Projects.module.css';
 
 import pigeonTask from './project_assets/pigeonTask';
@@ -11,25 +11,23 @@ import Project from './Project/Project';
 
 
 const Projects = () => {
-    // const [autoPlayPosition, setAutoPlayPosition] = useState(0)
+    const [autoPlayPosition, setAutoPlayPosition] = useState(0)
 
     const projects = [breweryApp, locationCo, colorCards, pigeonTask, portfolio];
 
-    // Cant quite figure out how to get this to work and rebuild the gif
-    // const handleScroll = useCallback(() => {
-    //     const height = document.documentElement.scrollHeight;
-    //     const scrollPosition = window.pageYOffset;
-    //     const setPosition = Math.floor(scrollPosition / (height / projects.length));
-    //     console.log(setPosition);
-    //     setAutoPlayPosition(setPosition);
-    // }, [projects]);
+    const handleScroll = useCallback(() => {
+        const height = document.documentElement.scrollHeight;
+        const scrollPosition = window.pageYOffset;
+        const setPosition = Math.floor(scrollPosition / (height / projects.length));
+        setAutoPlayPosition(setPosition);
+    }, [projects]);
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', handleScroll, { passive: true });
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, [handleScroll]);
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [handleScroll]);
 
     return (
         <div className={classes.Container}>
@@ -40,7 +38,8 @@ const Projects = () => {
             <div className={classes.ContentContainer}>
                 {projects.map((prj, index) => (
                     <Project
-                        order={index}
+                        key={index}
+                        hideStill={autoPlayPosition === index ? true : null}
                         title={prj.title} 
                         still={prj.still}
                         gif={prj.gif} 
