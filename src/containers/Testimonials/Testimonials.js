@@ -2,7 +2,7 @@ import React from 'react';
 import Aux from '../../hoc/Auxilliary/Auxilliary';
 import classes from './Testimonials.module.css';
 
-import Thor from '../../components/Images/Thor';
+import Matt from '../../components/Images/Matt';
 import Kat from '../../components/Images/Kat';
 
 import Carousel from '../../components/UI/Carousel/TestimonialCarousel/TestimonialCarousel';
@@ -11,13 +11,13 @@ import Carousel from '../../components/UI/Carousel/TestimonialCarousel/Testimoni
 const Testimonials = () => {
 
     const title = [
-        ['Thor', 'Experimental Brewer'],
+        ['Matt', 'Brewer'],
         ['Kat', 'Lead Lab Technician']
     ];
 
     const content = [
-        [`Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.`],
-        ['Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.']];
+        [`I admire Seung's ability to set a goal and follow through with it. The fact he built a database from scratch and maintained it, whilst juggling managing a lab, wastewater system, and heading a safety committee also speaks to his preserverance and dedication to projects. Pair that with his ability to receive and give constructive feedback, Seung has easily been one of the top coworkers I've had.`],
+        ['Seung has the unique blend of patience and skill that is often only reserved for educators. Getting the chance to watch him build our lab and database from scratch was both educational and a bit awe inspiring. His creativity and problem solving shines in everything he does, and I consider myself fortunate to have been able to learn and work alongside him.']];
 
     return (
         <Aux>
@@ -30,7 +30,7 @@ const Testimonials = () => {
                     <Carousel 
                         title={title}
                         content={content}
-                        img={[Thor, Kat]} 
+                        img={[Matt, Kat]} 
                     />
                 </div>
             </div>

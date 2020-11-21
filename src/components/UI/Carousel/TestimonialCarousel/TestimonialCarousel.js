@@ -87,8 +87,7 @@ const Carousel = props => {
         indicators.push((<li onClick={() => handlerIndicator(i)}
                                 key={'indicator' + i}
                                 className={position === i ? classes.Selected : null}/>));
-    }
-    console.log('ahh');
+    };
     const slidersWidth = {width: `${100*list.length}%`};
     return (
         <div className={classes.Container} style={props.passedStyle}>
