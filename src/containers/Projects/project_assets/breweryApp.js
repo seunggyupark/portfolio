@@ -13,6 +13,7 @@ the statuses of 34 tanks of beer was a nightmare as I was in charge of all the Q
 change how we did things entirely. I learned a lot about UX, technical debt, and how to communicate technology to non-technical people.</p>);
 
 export default {
+    title: "Brewery Management App",
     still,
     gif,
     description,

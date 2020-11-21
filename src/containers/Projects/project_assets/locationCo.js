@@ -12,6 +12,7 @@ const thoughts = (<p>This is my latest project that I completed as an entry into
     custom hooks for state management.</p>);
 
 export default {
+    title: "LocationCo",
     still,
     gif,
     description,

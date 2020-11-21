@@ -11,6 +11,7 @@ const thoughts = (<p>This is my first project after learning JavaScript, CSS, an
 I have seen this same issue in manufacturing environments where teams are managed with email and I wanted to present a simple solution.</p>);
 
 export default {
+    title: "Pigeon Task",
     still,
     gif,
     description,

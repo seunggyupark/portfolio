@@ -13,6 +13,7 @@ const thoughts = (<p>This is my first project using React to test myself on what
     </p>);
 
 export default {
+    title: "Portfolio",
     still,
     gif,
     description,

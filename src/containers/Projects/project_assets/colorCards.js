@@ -8,6 +8,7 @@ const description = (<p>A practice project using React and Sass. It accepts a co
         and how to use flexbox for card-type content.</p>);
 
 export default {
+    title: "Color Cards",
     still,
     gif,
     description,
