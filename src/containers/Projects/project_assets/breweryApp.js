@@ -10,7 +10,7 @@ const description = (<p>A key communication and process management tool for Reub
 
 const thoughts = (<p>This is my first project ever! When I worked at Reuben's Brews I was processing data by hand for about 10 hours a week. Additionally, figuring out
 the statuses of 34 tanks of beer was a nightmare as I was in charge of all the QA testing and scheduling.<br/><br/>Out of a desire to no longer write data on paper and reduce my skyrocketing stress levels, I set out to
-change how we did things entirely. I learned a lot about UX, technical debt, and how to communicate technology to non-technical people.</p>);
+change how we did things entirely. I learned a lot about UX, proposing designs to management, and how to communicate technology to non-technical people.</p>);
 
 export default {
     title: "Brewery Management App",
