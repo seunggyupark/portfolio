@@ -37,7 +37,7 @@ const Contact = () => {
         setInvalid(invalidTemp);
 
         if (userInput.fromName && userInput.fromEmail && userInput.message) {
-            emailjs.send('service_fsbgdjq', 'template_nt0vlsh', userInput, 'user_QJn1alsUXBi3ChIoNLO4m')
+            emailjs.send('service token', 'template token', userInput, 'user token')
                 .then(() => {
                     toggleModal()
                 }, error => {
